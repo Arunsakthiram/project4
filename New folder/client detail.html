@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Booking - Beauty Makeover</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f8fb;
+    }
+  .navbar {
+      background-color: #583150;
+    }
+    .navbar .nav-link, .navbar-brand {
+      color: #fff !important;
+    }
+    
+      .search-box input {
+      border-radius: 30px;
+      padding-left: 2.5rem;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-box .form-control {
+      width: 220px;
+    }
+    .form-section {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+    .sidebar {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+   
+    .btn-purple {
+      background: #6a5acd;
+      color: #fff;
+      font-weight: 500;
+    }
+    .btn-purple:hover {
+      background: #5941a9;
+      color: #fff;
+    }
+       .footer {
+      background: #583150;
+      color: #fff;
+      padding: 3rem 2rem;
+    }
+
+    .footer a {
+      color: #ddd;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+     <a class="navbar-brand" href="#">
+      <img src="bueaty_lg2-removebg-preview.png" alt="Bootstrap" width="100" height="50">
+    </a>
+    <a class="navbar-brand fw-bold" href="#">Beauty Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+         <li class="nav-item bottom"><a href="home.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="portfollio.html" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      <div class="ms-3 search-box">
+        <input class="form-control" type="search" placeholder="Search">
+      </div>
+      <div class="ms-3">
+        <a href="sign up.html"><i class="bi bi-person fs-4 text-white"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!-- Main -->
+  <div class="container my-4">
+    <div class="row">
+      <!-- Form Section -->
+      <div class="col-lg-8">
+        <div class="form-section">
+          <a href="#" class="d-block mb-3 text-dark">&larr; Back</a>
+          <h4 class="fw-bold">Client Details</h4>
+          <hr>
+          <p class="fw-bold bg-light p-2">
+            Already Have An Account? <a href="#" class="text-primary">Log In</a> For Faster Booking.
+          </p>
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Name *</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email *</label>
+              <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3 row">
+              <div class="col-md-3">
+                <label class="form-label">Code</label>
+                <select class="form-select">
+                  <option>+91</option>
+                  <option>+1</option>
+                  <option>+44</option>
+                </select>
+              </div>
+              <div class="col-md-9">
+                <label class="form-label">Phone Number</label>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Street *</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Apt. / Floor No.</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">City *</label>
+              <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">State</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Add Your Message</label>
+              <textarea class="form-control" rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-lg-4">
+        <div class="sidebar">
+          <h5 class="fw-bold">Booking Details</h5>
+          <hr>
+          <p><strong>Bridal Makeup Luxury Package</strong><br> Rs 25000 Negotiable</p>
+          <p><strong>12 May 2025 At 2:30 AM</strong></p>
+          <p>Client's Place<br>Admin<br>8 Hr</p>
+          <hr>
+          <h6>Payment Details</h6>
+          <p>Rs 25000 Negotiable</p>
+          <p class="small text-muted">By Completing Your Booking, You Agree To Receive Related SMS Notifications.</p>
+          <button class="btn btn-purple w-100">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row pe-5">
+        <div class="col-md-3 mt-2">
+          <h6 class="fw-bold">Quick Links</h6>
+          <a href="#">Home</a><br>
+          <a href="#">About</a><br>
+          <a href="#">Services</a><br>
+          <a href="#">Portfolio</a><br>
+          <a href="#">Contact</a>
+        </div>
+        <div class="col-md-3  mt-2">
+          <h6 class="fw-bold">Services</h6>
+          <a href="#">Mission</a><br>
+          <a href="#">Integrations</a><br>
+          <a href="#">Features</a><br>
+          <a href="#">Pricing</a><br>
+          <a href="#">Industries</a>
+        </div>
+        <div class="col-md-3  mt-2">
+          <h6 class="fw-bold">Other Links</h6>
+          <a href="#">Blog</a><br>
+          <a href="#">Testimonials</a><br>
+          <a href="#">Privacy Policy</a><br>
+          <a href="#">Cancellation and Refund</a><br>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="col-md-3  mt-2">
+          <h6 class="fw-bold">Contact Info</h6>
+          
+          <p> <i class="bi bi-geo-alt pe-2"></i>8-2-686/Dr/9,Banjara Hills,Hyderabad, Telangana</p>
+          <p><i class="bi bi-telephone"></i> +91-869-011-0011</p>
+          <p class="email">✉ bookingmyna@gmail.com</p>
+        </div>
+      </div>
+      <div class="text-center mt-3 d-flex flex-wrap justify-content-between">
+        <small>© 2008–2025 Makeover Booking Service. All Rights Reserved</small>
+         <div class="d-flex gap-3">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg>
+          </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS & Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</body>
+</html>
